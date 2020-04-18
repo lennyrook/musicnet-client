@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MusicNet Client
+The idea of this project is to work with several frameworks (React, Material-UI) and APIs (Youtube, Spotify) to create a music player which allows to include music from different platforms.
 
 ## Available Scripts
 

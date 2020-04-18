@@ -1,0 +1,39 @@
+.inactive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        margin-bottom: 6vh;
+    }
+
+    .subtitle {
+        margin-bottom: 3vh;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .qr-icon {
+            justify-content: space-evenly;
+            margin-left:auto;
+            width: 50px;
+            height: 50px;
+            background-image: url('./../../images/qr-scanner-icon.png');
+            background-color: $white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        a {
+            cursor: pointer;
+        }
+    }
+
+    .input {
+        margin-bottom: 2vh;
+    }
+}

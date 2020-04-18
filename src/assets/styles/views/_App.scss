@@ -1,0 +1,21 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    
+    background-color: $background-dark;
+    color: $white;
+
+    overflow-x: hidden;
+
+    .grid {
+        height: 100%;
+    }
+
+    .centered-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

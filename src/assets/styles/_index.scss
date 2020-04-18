@@ -1,0 +1,33 @@
+// import other scss files
+
+// common
+@import './common/variables';
+@import './common/overrides';
+
+// components
+@import './components/Loader';
+@import './components/InputDialog';
+@import './components/SongItem';
+@import './components/SongList';
+@import './components/SourceFilter';
+
+// views
+@import './views/App';
+@import './views/Header';
+@import './views/Footer';
+@import './views/Inactive';
+@import './views/Active';
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}

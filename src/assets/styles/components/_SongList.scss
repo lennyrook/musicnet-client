@@ -1,0 +1,21 @@
+.song-list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+
+    .no-results {
+        margin-top: 30%;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: center;
+        margin-top: 10%;
+
+        .song-item {
+            margin-bottom: 2vh;
+        }
+    }
+}

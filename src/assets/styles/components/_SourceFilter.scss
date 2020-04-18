@@ -1,0 +1,28 @@
+.source-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .source-wrapper {
+        display: flex;
+
+        max-width: 35px;
+        max-height: 35px;
+
+        // margin-right: 6vw;
+
+        &.active {
+            opacity: 1.0;
+        }
+
+        &.inactive {
+            opacity: 0.4;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.active-page {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    
+    margin-top: 7vh;
+
+    .source-filter {
+        margin-bottom: 5vh;
+    }
+}

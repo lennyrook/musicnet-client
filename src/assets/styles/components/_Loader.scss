@@ -1,0 +1,10 @@
+.loader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .progress {
+        margin-bottom: 2vh;
+        color: $secondary;
+    }
+}
