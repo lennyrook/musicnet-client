@@ -16,7 +16,7 @@ import Typography from '@material-ui/core/Typography'
 
 const SongItem = (props) => {
     return (
-        <div className='song-item'>
+        <div className={`song-item ${props.spacer}`}>
             <div className='keyframe-wrapper'>
                 <img src={props.keyframe} />
             </div>

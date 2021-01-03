@@ -1,7 +1,11 @@
 .footer {
+    display: flex;
+
     .bar {
         background-color: $background;
         align-items: center;
+        top: auto;
+        bottom: 0;
     }
 
     .burger-menu {

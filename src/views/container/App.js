@@ -62,19 +62,19 @@ class App extends Component {
                             <Grid className='grid' container spacing={2} justify='center'>
                                 <Switch>
                                     <Route exact path="/">
-                                        <Grid item xs={11} md={4} lg={4}>default</Grid>
+                                        <Grid item xs={11} sm={7} md={5} lg={4}>default</Grid>
                                     </Route>
                                     
                                     <Route path={`/${router.PAGE_LOADING}`}>
-                                        <Grid item xs={11} md={4} lg={4} className='centered-wrapper'><Loader title='Initialising Application' /></Grid>
+                                        <Grid item xs={11} sm={7} md={5} lg={4} className='centered-wrapper'><Loader title='Initialising Application' /></Grid>
                                     </Route>
                                     
                                     <Route path={`/${router.PAGE_ACTIVE}`}>
-                                        <Grid item xs={11} md={4} lg={4} className='centered-wrapper'><Inactive className='' /></Grid>
+                                        <Grid item xs={11} sm={7} md={5} lg={4} className='centered-wrapper'><Inactive className='' /></Grid>
                                     </Route>
                                     
                                     <Route path={`/${router.PAGE_INACTIVE}`}>
-                                        <Grid item xs={10} md={4} lg={4}><Active className='' /></Grid>
+                                        <Grid item xs={10} sm={7} md={5} lg={4} className='app-item full-height'><Active className='' /></Grid>
                                     </Route>
                                 </Switch>
                             </Grid>

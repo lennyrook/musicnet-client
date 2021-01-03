@@ -1,9 +1,10 @@
 .active-page {
+    position: relative;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     
-    margin-top: 7vh;
+    margin-top: 10%;
 
     .source-filter {
         margin-bottom: 5vh;

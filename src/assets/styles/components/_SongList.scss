@@ -1,21 +1,76 @@
 .song-list {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    justify-content: center;
 
-    .no-results {
-        margin-top: 30%;
-    }
-
-    .list {
+    .overflow-wrapper {
         display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        align-items: center;
-        margin-top: 10%;
+        width: 100%;
 
-        .song-item {
-            margin-bottom: 2vh;
+        @media (max-width: $small) {
+            margin-top: 4vh;
+            height: 54vh;
+        }
+
+        @media (min-width: $small) {
+            margin-top: 5vh;
+            height: 52vh;
+        }
+
+        @media (min-width: $medium) {
+            margin-top: 4vh;
+            height: 59vh;
+        }
+
+        @media (min-width: $large) {
+            margin-top: 5vh;
+            height: 55vh;
+        }
+
+        @media (min-width: $xlarge) {
+            margin-top: 10%;
+            height: 54vh;
+        }
+
+        .overflow-container {
+            flex: 1;
+            overflow-y: auto;
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: $background-dark;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: $background;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .no-results {
+                margin-top: 30%;
+            }
+
+            .list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .song-item {
+                    &.spacer {
+                        margin-bottom: 2vh;
+                    }
+                }
+            }
         }
     }
 }

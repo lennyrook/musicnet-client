@@ -12,9 +12,11 @@ import SongItem from './SongItem'
 const parseList = (source) => {
     let parsedList = []
     let entries = Object.entries(source)
-    
-    for(let [key, value] of entries) {
-        let item = ( <SongItem key={key} {...value} /> )
+    let numberOfEntries = entries.length
+
+    for(let [index, value] of entries) {
+        const spacer = index < numberOfEntries - 1 ? 'spacer' : null
+        let item = ( <SongItem key={index} spacer={spacer} {...value} /> )
 
         parsedList.push(item)
     }
@@ -30,19 +32,23 @@ const SongList = ({ list }) => {
 
     return (
         <div className='song-list'>
-            {
-                !hasResults &&
-                <Typography className='no-results' variant='subtitle1'>
-                    { noResults }
-                </Typography>
-            }
+            <div className='overflow-wrapper'>
+                <div className='overflow-container'>
+                    {
+                        !hasResults &&
+                        <Typography className='no-results' variant='subtitle1' align='center'>
+                            { noResults }
+                        </Typography>
+                    }
 
-            {
-                hasResults &&
-                <div className='list'>
-                    { parsedList }
+                    {
+                        hasResults &&
+                        <div className='list'>
+                            { parsedList }
+                        </div>
+                    }
                 </div>
-            }
+            </div>
         </div>
     )
 }
