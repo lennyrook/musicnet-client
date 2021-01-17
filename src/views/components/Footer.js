@@ -17,7 +17,7 @@ function mapStateToProps(state) {
 
     return {
         version: global.version,
-        url: global.url
+        author_url: global.author_url
     }
 }
 
@@ -35,7 +35,7 @@ class Footer extends Component {
                 <AppBar position='static' className='bar'>
                     <Toolbar>
                         <Typography className='text' variant='caption'>
-                            version {this.props.version} by <a href={this.props.url} target='_blank' rel="noopener noreferrer">Lenny</a>
+                            version {this.props.version} by <a href={this.props.author_url} target='_blank' rel="noopener noreferrer">Lenny</a>
                         </Typography>
                     </Toolbar>
                 </AppBar>

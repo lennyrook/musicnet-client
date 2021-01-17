@@ -1,5 +1,5 @@
 {
-    "url": "https://github.com/JonasLenny",
+    "author_url": "https://github.com/JonasLenny",
     "version": "0.3.2",
     "host": "https://localhost:2020",
     "sources": ["spotify", "youtube", "soundcloud"]

@@ -1,14 +1,15 @@
 .inactive {
     display: flex;
+    flex: 1 0 auto;
     flex-direction: column;
     align-items: center;
 
     .title {
-        margin-bottom: 6vh;
+        margin: 6rem 0 6rem 0;
     }
 
     .subtitle {
-        margin-bottom: 3vh;
+        margin-bottom: 3rem;
     }
 
     .options {

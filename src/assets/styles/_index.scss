@@ -5,6 +5,8 @@
 @import './common/overrides';
 
 // components
+@import './components/Footer';
+@import './components/Header';
 @import './components/Loader';
 @import './components/InputDialog';
 @import './components/SongItem';
@@ -13,8 +15,6 @@
 
 // views
 @import './views/App';
-@import './views/Header';
-@import './views/Footer';
 @import './views/Inactive';
 @import './views/Active';
 

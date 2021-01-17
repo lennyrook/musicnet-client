@@ -30,6 +30,8 @@ class Api {
                 else
                     resolve(response)
             })
+
+            
         })
 
         return promise

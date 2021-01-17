@@ -18,13 +18,13 @@ import Grid from '@material-ui/core/Grid';
 import store from '../../store/store'
 import history from './../../data/utils/history'
 import types from './../../store/global/types'
-import router from './../../store/router/types'
+import routerTypes from './../../store/router/types'
 
 // views
 import Loader from '../components/Loader'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
-import Header from './Header'
-import Footer from './Footer'
 import Inactive from './Inactive'
 import Active from './Active'
 
@@ -65,16 +65,16 @@ class App extends Component {
                                         <Grid item xs={11} sm={7} md={5} lg={4}>default</Grid>
                                     </Route>
                                     
-                                    <Route path={`/${router.PAGE_LOADING}`}>
+                                    <Route path={`/${routerTypes.PAGE_LOADING}`}>
                                         <Grid item xs={11} sm={7} md={5} lg={4} className='centered-wrapper'><Loader title='Initialising Application' /></Grid>
                                     </Route>
                                     
-                                    <Route path={`/${router.PAGE_ACTIVE}`}>
+                                    <Route path={`/${routerTypes.PAGE_ACTIVE}`}>
                                         <Grid item xs={11} sm={7} md={5} lg={4} className='centered-wrapper'><Inactive className='' /></Grid>
                                     </Route>
                                     
-                                    <Route path={`/${router.PAGE_INACTIVE}`}>
-                                        <Grid item xs={10} sm={7} md={5} lg={4} className='app-item full-height'><Active className='' /></Grid>
+                                    <Route path={`/${routerTypes.PAGE_INACTIVE}`}>
+                                        <Grid item xs={10} sm={7} md={5} lg={4} className='app-item full-height'><Inactive className='' /></Grid>
                                     </Route>
                                 </Switch>
                             </Grid>
